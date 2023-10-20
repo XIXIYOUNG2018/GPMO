@@ -1,8 +1,6 @@
-![Maturity level-0](https://img.shields.io/badge/Maturity%20Level-ML--0-red)
-# Molecular Optimization by Capturing Chemist's Intuition Using Deep Neural Networks
-## Description
-Implementation of the Seq2Seq with attention and the Transformer used in [Molecular Optimization by Capturing Chemist's Intuition Using Deep Neural Networks](https://chemrxiv.org/articles/preprint/Molecular_Optimization_by_Capturing_Chemist_s_Intuition_Using_Deep_Neural_Networks/12941744).
-Given a molecule and desirable property changes, the goal is to generate molecules with desirable property changes. This problem can be viewed as a machine translation problem in natural language processing. Property changes are incorporated into input together with SMILES. 
+
+# GPMO: Gradient Perturbation-Based Contrastive Learning for Molecule Optimization
+## Abstract Optimizing molecules with desired properties is a crucial step in de novo drug design. While translation-based methods have achieved initial success, they continue to face the challenge of the “exposure bias” problem. The challenge of preventing the “exposure bias” problem of molecule optimization lies in the need for both positive and negative molecules of contrastive learning. That is because generating positive molecules through data augmentation requires domain-specific knowledge, and randomly sampled negative molecules are easily distinguished from the real molecules. Hence, in this work, we propose a molecule optimization method called GPMO, which leverages a gradient perturbation-based contrastive learning method to prevent the “exposure bias” problem in translation-based molecule optimization. With the assistance of positive and negative molecules, GPMO is able to effectively handle both real and artificial molecules. GPMO is a molecule optimization method that is conditioned on matched molecule pairs for drug discovery. Our empirical studies show that GPMO outperforms the state-of-the-art molecule optimization methods. Furthermore, the negative and positive perturbations improve the robustness of GPMO.
 
 
 ## Usage
