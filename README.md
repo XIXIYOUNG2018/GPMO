@@ -4,7 +4,6 @@
 Implementation of the Seq2Seq with attention and the Transformer used in [Molecular Optimization by Capturing Chemist's Intuition Using Deep Neural Networks](https://chemrxiv.org/articles/preprint/Molecular_Optimization_by_Capturing_Chemist_s_Intuition_Using_Deep_Neural_Networks/12941744).
 Given a molecule and desirable property changes, the goal is to generate molecules with desirable property changes. This problem can be viewed as a machine translation problem in natural language processing. Property changes are incorporated into input together with SMILES. 
 
-![Alt text](./data/input_representation.PNG)
 
 ## Usage
 Create environment 
@@ -13,12 +12,20 @@ Create environment
 conda env create -f environment.yml
 source activate gpmo
 ```
-**1. Preprocess data**
-
- Encode property change, build vocabulary, and split data into train, validation and test. Outputs are saved in the same directory with input data path.
-
+**1. Preparation before training the model
+***1.1 create fold for checkpoint of pre-training and finetune  and  evaluation
 ```
-python preprocess_prop.py --input-data-path data/chembl_02/train.csv
+cd experiments
+mkdir evaluation_transformer #create folder for evaluation
+mkdir train_transformer/checkpointpretrain  #create folder for pretraining checkpoint
+then download the pre-training checkpoint from here() and put it into the pretraining checkpoint
+mkdir  train_transformer/checkpoint #create folder for finetune checkpoint.
+```
+***1.2 If you want to train the model with customered data 
+
+ Encode property change, build vocabulary, and split data into train, validation, and test. Outputs are saved in the same directory with input data path.
+```
+python preprocess_prop.py --input-data-path data/data_name/data.csv
 ```
 **2. Train model**
 
