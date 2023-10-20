@@ -12,7 +12,7 @@ Create environment
 conda env create -f environment.yml
 source activate gpmo
 ```
-**1. Preparation before training the model
+**1. Preparation before training the model**
 ***1.1 create fold for checkpoint of pre-training and finetune  and  evaluation
 ```
 cd experiments
@@ -21,7 +21,7 @@ mkdir train_transformer/checkpointpretrain  #create folder for pretraining check
 then download the pre-training checkpoint from here() and put it into the pretraining checkpoint
 mkdir  train_transformer/checkpoint #create folder for finetune checkpoint.
 ```
-***1.2 If you want to train the model with customered data 
+***1.2 If you want to train the model with customered data***
 
  Encode property change, build vocabulary, and split data into train, validation, and test. Outputs are saved in the same directory with input data path.
 ```
