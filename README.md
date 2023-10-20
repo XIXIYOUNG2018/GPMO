@@ -13,7 +13,7 @@ conda env create -f environment.yml
 source activate gpmo
 ```
 **1. Preparation before training the model**
-***1.1 create fold for checkpoint of pre-training and finetune  and  evaluation
+***1.1 create fold for checkpoint of pre-training and finetune  and  evaluation***
 ```
 cd experiments
 mkdir evaluation_transformer #create folder for evaluation
