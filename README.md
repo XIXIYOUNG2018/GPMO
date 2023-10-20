@@ -18,7 +18,9 @@ create folder, download pre-training checkpoint, and pre-process customered data
 cd experiments
 mkdir evaluation_transformer #create folder for evaluation
 mkdir train_transformer/checkpointpretrain  #create folder for pretraining checkpoint
+```
 then download the pre-training checkpoint from here(https://drive.google.com/file/d/1X6aTxecoFwkmtMQb2-d8KMXlU2IpAg5Z/view?usp=share_link) and put it into the pretraining checkpoint
+```
 mkdir  train_transformer/checkpoint #create folder for finetune checkpoint.
 ```
 ***1.2 If you want to train the model with customered data***
