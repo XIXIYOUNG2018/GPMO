@@ -13,6 +13,7 @@ conda env create -f environment.yml
 source activate gpmo
 ```
 **1. Preparation before training the model**
+
 create folder, download pre-training checkpoint, and pre-process customered data before training.
 ***1.1 create fold for checkpoint of pre-training and finetune  and  evaluation***
 ```
