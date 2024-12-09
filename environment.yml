@@ -1,4 +1,4 @@
-name: MPCD
+name: gpmo
 channels:
   - rdkit
   - pytorch
